@@ -12,7 +12,7 @@
          <graphic>
             <ImageView fitHeight="50.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Desktop/29835dasda.png" />
+                  <Image url="@/icons/29835dasda.png" />
                </image>
             </ImageView>
          </graphic></Button>
@@ -20,7 +20,7 @@
          <graphic>
             <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Desktop/favorite-1762541-1501757.png" />
+                  <Image url="@/icons/favorite-1762541-1501757.png" />
                </image>
             </ImageView>
          </graphic></Button>
@@ -28,7 +28,7 @@
          <graphic>
             <ImageView fitHeight="51.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Desktop/1000_F_409415434_4LMPjiJhm7Qham7DZaemfOQzWJpw3Vhy-removebg-preview.png" />
+                  <Image url="@/icons/add-icon-plus-sign-plus-icon-simple-add-sign-vector-cross-700-176278383-removebg-preview.png" />
                </image>
             </ImageView>
          </graphic></Button>

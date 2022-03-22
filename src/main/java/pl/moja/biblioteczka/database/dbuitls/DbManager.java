@@ -11,7 +11,7 @@ public class DbManager {
 
     private static final String JDBC_PREFIX = "jdbc:mysql://";
     private static final String DATABASE_HOSTNAME = "127.0.0.1";
-    private static final String DATABASE_NAME = "test";
+    private static final String DATABASE_NAME = "materials";
     private static final String DATABASE_USERNAME = "root";
     private static final String DATABASE_PASSWORD = "admin";
 
