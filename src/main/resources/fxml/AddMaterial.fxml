@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.moja.biblioteczka.controllers.AddMaterialController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="134.0" layoutY="66.0"  />
+      <TextField fx:id="countryTextField" layoutX="134.0" layoutY="98.0" />
+      <TextField fx:id="normTextField" layoutX="134.0" layoutY="137.0" />
+      <TextField fx:id="yieldStrenghtMinTextField" layoutX="135.0" layoutY="169.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="yieldStrenghtMaxTextField" layoutX="225.0" layoutY="169.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="tensileStrengthMinTextField" layoutX="135.0" layoutY="204.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="tensileStrengthMaxTextField" layoutX="225.0" layoutY="204.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="percentageElongationMinTextField" layoutX="135.0" layoutY="240.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="percentageElongationMaxTextField" layoutX="231.0" layoutY="240.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="brinellHardnessMinTextField" layoutX="135.0" layoutY="280.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="brinellHardnessMaxTextField" layoutX="225.0" layoutY="280.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="impactStrengthMinTextField" layoutX="135.0" layoutY="315.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="impactStrengthMaxTextField" layoutX="225.0" layoutY="315.0" prefHeight="25.0" prefWidth="58.0" />
+      <Separator layoutX="546.0" layoutY="4.0" orientation="VERTICAL" prefHeight="468.0" prefWidth="1.0" />
+      <Label layoutX="39.0" layoutY="65.0" text="%name.label" />
+      <Label layoutX="40.0" layoutY="97.0" text="%country.label" />
+      <Label layoutX="39.0" layoutY="136.0" text="%norm.label" />
+      <Label layoutX="6.0" layoutY="172.0" text="%yield.strength.label" />
+      <Label layoutX="11.0" layoutY="204.0" text="%tensile.strength.label" />
+      <Label layoutY="240.0" text="%percentage.elongation.label" />
+      <Label layoutX="22.0" layoutY="280.0" text="%brinell.hardness.label" />
+      <Label layoutX="18.0" layoutY="313.0" text="%impact.strength.label" />
+      <Label layoutX="194.0" layoutY="173.0" text="max" />
+      <Label layoutX="194.0" layoutY="205.0" text="max" />
+      <Label layoutX="194.0" layoutY="244.0" text="max" />
+      <Label layoutX="194.0" layoutY="284.0" text="max" />
+      <Label layoutX="194.0" layoutY="319.0" text="max" />
+      <Button fx:id="saveButton" layoutX="456.0" layoutY="405.0" mnemonicParsing="false" onAction="#saveButtonOnAction" text="%save.label" />
+      <Button fx:id="clearButton" layoutX="303.0" layoutY="405.0" mnemonicParsing="false" onAction="#clearButtonOnAction" text="%clear.label" />
+      <ListView fx:id="addedElementsListView" layoutX="298.0" layoutY="73.0" prefHeight="112.0" prefWidth="227.0" />
+      <ComboBox fx:id="addMaterialComboBox" layoutX="298.0" layoutY="201.0" prefHeight="25.0" prefWidth="227.0" />
+      <TextField fx:id="minValueTextField" layoutX="349.0" layoutY="263.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="maxValueTextField" layoutX="465.0" layoutY="263.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="298.0" layoutY="267.0" text="min" />
+      <Label layoutX="421.0" layoutY="270.0" text="max" />
+      <Label layoutX="298.0" layoutY="58.0" text="%added.elements" />
+      <Button fx:id="addMaterialButton" layoutX="476.0" layoutY="327.0" mnemonicParsing="false" onAction="#addMaterialButtonOnAction" text="%add.label" />
+      <Separator layoutX="-3.0" layoutY="383.0" prefHeight="5.0" prefWidth="546.0" />
+      <Text layoutX="25.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%add.material.main.label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

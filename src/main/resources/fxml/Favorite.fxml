@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.moja.biblioteczka.controllers.FavoriteController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="My favorite materials">
+               <HBox.margin>
+                  <Insets left="200.0" top="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="favouriteTableView" prefHeight="264.0" prefWidth="600.0" >
+         <columns>
+            <TableColumn fx:id="materialIdCol" prefWidth="75.0" text="material id" />
+            <TableColumn fx:id="materialNameCol" prefWidth="75.0" text="%material.name.col" />
+            <TableColumn fx:id="countryCol" prefWidth="75.0" text="%country.col" />
+            <TableColumn fx:id="normCol" prefWidth="75.0" text="%norm.col" />
+            <TableColumn fx:id="yieldStrengthMinCol" prefWidth="75.0" text="%yield.strength.min.col" />
+            <TableColumn fx:id="yieldStrengthMaxCol" prefWidth="75.0" text="%yield.strength.max.col" />
+            <TableColumn fx:id="tensileStrengthMinCol" prefWidth="75.0" text="%tensile.strength.min.col" />
+            <TableColumn fx:id="tensileStrengthMaxCol" prefWidth="75.0" text="%tensile.strength.max.col" />
+            <TableColumn fx:id="percentageElongationMinCol" prefWidth="75.0" text="%percentage.elongation.min.col" />
+            <TableColumn fx:id="percentageElongationMaxCol" prefWidth="75.0" text="%percentage.elongation.max.col" />
+            <TableColumn fx:id="brinellHardnessMinCol" prefWidth="75.0" text="%brinell.hardness.min" />
+            <TableColumn fx:id="brinellHardnessMaxCol" prefWidth="75.0" text="%brinell.hardness.max" />
+            <TableColumn fx:id="impactStrengthMinCol" prefWidth="75.0" text="%impact.strength.min" />
+            <TableColumn fx:id="impactStrengthMaxCol" prefWidth="75.0" text="%impact.strength.max" />
+            <TableColumn fx:id="materialCompositionCol" prefWidth="75.0" text="material com " />
+
+
+         </columns>
+      </TableView>
+   </children>
+</VBox>
