@@ -1,48 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.RadioMenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.moja.biblioteczka.controllers.MainController">
-   <top>
-      <VBox prefHeight="126.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
-         <MenuBar>
-           <menus>
-             <Menu mnemonicParsing="false" text="%file">
-               <items>
-                 <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="%close" />
-               </items>
-             </Menu>
-             <Menu mnemonicParsing="false" text="%edit">
-                  <items>
-                     <RadioMenuItem mnemonicParsing="false" onAction="#setCaspian" text="%caspian">
-                        <toggleGroup>
-                           <ToggleGroup fx:id="styleGroup" />
-                        </toggleGroup></RadioMenuItem>
-                     <RadioMenuItem mnemonicParsing="false" onAction="#SetModena" selected="true" text="%modena" toggleGroup="$styleGroup" />
-                     <SeparatorMenuItem mnemonicParsing="false" onAction="#alwaysOnTop" />
-                     <CheckMenuItem mnemonicParsing="false" onAction="#alwaysOnTop" text="%alwaysOnTop" />
-                  </items>
-             </Menu>
-             <Menu mnemonicParsing="false" text="%help">
-               <items>
-                 <MenuItem mnemonicParsing="false" onAction="#about" text="%about" />
-               </items>
-             </Menu>
-           </menus>
-         </MenuBar>
-          <fx:include fx:id="topMenuButtons" source="TopMenuButtons.fxml" />
-      </VBox>
-   </top>
-   <center>
-      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-   </center>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.moja.biblioteczka.controllers.MainController">
+    <top>
+        <VBox alignment="CENTER" prefHeight="1.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+            <MenuBar>
+                <menus>
+                    <Menu mnemonicParsing="false" text="%file">
+                        <items>
+                            <MenuItem mnemonicParsing="false" onAction="#closeApplication" text="%close" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="%edit">
+                        <items>
+                            <RadioMenuItem mnemonicParsing="false" onAction="#setCaspian" text="%caspian">
+                                <toggleGroup>
+                                    <ToggleGroup fx:id="styleGroup" />
+                                </toggleGroup></RadioMenuItem>
+                            <RadioMenuItem mnemonicParsing="false" onAction="#SetModena" selected="true" text="%modena" toggleGroup="$styleGroup" />
+                            <SeparatorMenuItem mnemonicParsing="false" onAction="#alwaysOnTop" />
+                            <CheckMenuItem mnemonicParsing="false" onAction="#alwaysOnTop" text="%alwaysOnTop" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="%help">
+                        <items>
+                            <MenuItem mnemonicParsing="false" onAction="#about" text="%about" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <fx:include fx:id="topMenuButtons" source="TopMenuButtons.fxml" />
+        </VBox>
+    </top>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="519.0" layoutY="693.0" text="%author.label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="185.0" fitWidth="183.0" layoutX="614.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../Desktop/AGH_Logo-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1105.0" layoutY="777.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../Desktop/logos-removebg-preview.png" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+    </center>
 </BorderPane>

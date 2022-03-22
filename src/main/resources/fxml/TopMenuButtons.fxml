@@ -6,19 +6,32 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.moja.biblioteczka.controllers.TopMenuButtonsController">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.moja.biblioteczka.controllers.TopMenuButtonsController">
    <children>
       <Button mnemonicParsing="false" onAction="#addCategory" prefHeight="80.0" prefWidth="150.0" text="%all.materials">
          <graphic>
-            <ImageView fitHeight="60.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../icons/illustration-of-book-icon-free-vector.jpg" />
+                  <Image url="@../../../../../Desktop/29835dasda.png" />
                </image>
             </ImageView>
          </graphic></Button>
-      <Button mnemonicParsing="false" onAction="#favoriteActions" prefHeight="80.0" prefWidth="150.0" text="%favorite.material" />
-      <Button mnemonicParsing="false" onAction="#addMaterialsAction" prefHeight="80.0" prefWidth="150.0" text="%add.material" />
-      <Button mnemonicParsing="false" onAction="#editMaterialAction" prefHeight="80.0" prefWidth="150.0" text="%edit.material" />
+      <Button mnemonicParsing="false" onAction="#favoriteActions" prefHeight="80.0" prefWidth="150.0" text="%favorite.material">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/favorite-1762541-1501757.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button mnemonicParsing="false" onAction="#addMaterialsAction" prefHeight="80.0" prefWidth="150.0" text="%add.material">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/1000_F_409415434_4LMPjiJhm7Qham7DZaemfOQzWJpw3Vhy-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
    </children>
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
